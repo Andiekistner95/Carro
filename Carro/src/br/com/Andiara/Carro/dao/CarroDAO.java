@@ -20,7 +20,7 @@ public class CarroDAO {
 	public List<Carro> lista() throws SQLException {
 		List<Carro> Lcarros = new ArrayList<>();
 
-		String sql = "select from CARRO";
+		String sql = "select * from CARRO";
 
 		try (PreparedStatement stmt = con.prepareStatement(sql)) {
 
